@@ -7,7 +7,7 @@ import { useState } from "react";
 import { LegalAgeAlert } from "./components/LegalAgeAlert";
 
 export default function App() {
-    const [legalAge, setLegalAge] = useState(true);
+    const [legalAge, setLegalAge] = useState(false);
 
     if (!legalAge)
         return (
