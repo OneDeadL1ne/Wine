@@ -33,7 +33,10 @@ export function AuthDialog({
     const [open, setOpen] = useState<boolean>(true);
 
     const refreshToken = localStorage.getItem("refreshToken");
-
+    setUser({
+        phone: "+79000000000",
+        password: "string",
+    });
     const handleOnClick = async () => {
         const res = await axios.post<IToken>(
             `${import.meta.env.VITE_API}/auth`,
